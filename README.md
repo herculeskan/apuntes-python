@@ -15,5 +15,11 @@ Saludos,mi nombre es **Carlos Lara**. Pero mi nickname en internet es **Hercules
 
   >La verdad no uso muchas redes sociales
 ---
+Mucho de este contenido lo saqué de mis apuntes tomando cursos en:
+* [Platzi](https://platzi.com/)
+* [FreeCodeCamp](https://www.freecodecamp.org/)
+* El libro de: [Python paso a paso](https://www.amazon.com/-/es/%C3%81ngel-Pablo-Hinojosa-Guti%C3%A9rrez/dp/8499646115) del escritor  Ángel Pablo Honojosa Gutiérrez
+
+
 Contenido
 1. [Datos](datos.md)

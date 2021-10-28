@@ -172,6 +172,81 @@ más(+) concatenar...... (*) multiplicar
 |false | true |
 
 
-#### Estructura de datos
+#### Estructura de datos :books:
 
-A diferencia
+Al igual que muchos lenguajes de programación, python también suple la necesidad de meter varios objetos en una variable o constante, a esto se le llama *array* o *arreglo*
+
+##### listas
+```python
+numeros = [1, 2, 3, 4, 5, 6]
+#también pueden 
+# contener arreglos 
+# de diferente tipo
+cosas = ['saludos',1, 2,0.432, True]
+```
+para acceder a los objetos de una lista (estas van de 0 a 100), usamos simplemente [ ]. por ejemplo:
+
+```python
+cosas[0]
+#esto accederá al arreglo "saludos"
+```
+###### Agregar y borrar elementos de las listas.
+para esto usamos métodos. Estos son funciones esperciales ligadas a un tipo de dato en particular.
+Empezamos con el método **append()** el cuál se usa para agregar cosas al array, acá un ejemplo
+
+```python
+cosas.append(False)
+#a esto agregará el elemento "False" al final
+```
+para borrar cosas de la lista usamos el método **pop()**:
+```python
+cosas.pop(3)#dentro del parentesis metemos
+# el índice de lo que queremos borrar
+#acá se borra el objeto 0.432
+```
+***nota:*** *también podemos recorrer la lista con el ciclo for (el cuál tomaré apuntes próximamente)*
+```python
+for objetos in cosas:
+    print(objetos)
+```
+* en caso de que quiera tener la lista al revés puedo usar el [::-1]. el :: nos sirve para viajar entre elementos y objetos, como si fuera un carro. Esto se le conoce como *slice*
+```python
+cosas[1:3]
+#esto retornará: [0.432,True]
+```
+##### Tuplas :ghost:
+A diferencia de las listas, las tulpas no se pueden modificar a través del tiempo.
+La estructura es igual a la de las listas. Solo que en vez de usar *[ ]* usamos paréntesis *( )*
+
+```python
+tupla = (1, 2, 3, 4, 5)
+tupla
+#esto retornará lo que está dentro de la
+#  tupla, en este caso: (1, 2, 3, 4, 5)
+```
+**No** se puede llamar ninguno de esos elementos con, por ejemplo: tupla(4) porque son objetos **inmutables o estáticos**. A diferencia de las listas que son objetos **mutables o dinámicos** los cuáles si se pueden alterar y llamar individualmente.
+la ventaja de esto es que:
+*  para hacer iteraciones( recorrer la lista con el ciclo for) se tiene una ejecución mucho más rápida que en las listas
+
+##### Diccionarios :bookmark_tabs:
+
+a diferencia de las listas y las tulpas los  diccionarios se encierran entre llaves {}. Un diccionario es una estructura de datos de llaves y valores. 
+A diferencia de las listas, no se accede a cada elemento del diccionario a través de su índice 
+
+```python
+diccionario(2)
+#Mala práctica, error
+```
+sino a través de llaves.
+*las llaves a diferencia de los indices no son números que van de 0 al límite.* En los diccionarios le ponemos nombre al índice al cual le llamamos llave.
+```Python
+def run(): 
+    mi_diccionario= {
+        'llave1':1,
+        'llave2':2,
+        'llave3':3,
+    }
+    print(mi_diccionario)
+#Retornará {'llave1':1, 'llave2': 2,'llave3':3}
+if __name__ == '__main__':
+    run()
