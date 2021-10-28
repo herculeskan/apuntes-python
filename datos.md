@@ -1,4 +1,4 @@
-#1. Tipos de datos en Python
+# 1. Python: datos, tipos de datos y como manejarlos :car:
 
 ![python](img/python.png)
 
@@ -250,3 +250,53 @@ def run():
 #Retornará {'llave1':1, 'llave2': 2,'llave3':3}
 if __name__ == '__main__':
     run()
+```
+Para imprimirlos de manera individual simplemente los llamamos por el nombre que está en entrecomillas:
+```python
+print(diccionario['llave1'])
+print(diccionario1['llave2'])
+print(diccionario['llave3'])
+#Esto retornará:
+#1
+#2
+#3
+```
+###### Métodos más relevantes del diccionario.
+
+* .keys() obtiene objetos claves de un diccionario:
+  
+  ```python
+   Prenda = {'color': 'rosa', 'marca': 'Zara', 'talle': 'U'}
+   
+  for clave in valor.keys():
+   print(clave)
+  #esto imprimirá ['color', 'marca', 'talle']
+  ```
+  Ejemplo sacado de [uniwebsidad.com](https://uniwebsidad.com/libros/python/capitulo-8/metodos-de-retorno)
+
+* value() obtiene valores de un diccionario
+```python
+ diccionario = {'color': 'rosa', 'marca': 'Zara', 'talle': 'U'}
+ for clave in valor.value():
+     print(valores)
+#esto imprimirá ['rosa', 'Zara', 'U']
+```
+
+* items() devuelve ambos valores, la llave y el valor
+  ```python
+  diccionario = {'color': 'rosa', 'marca': 'Zara', 'talle': 'U'}
+  for clave, valor in diccionario.items():
+      print('de '+ str(clave) + str(valor))
+      #ee color rosa, de marca Zara, de talleU
+
+  ```
+  Plus xd
+  * **len()** obtener la cantidad de elementos que tiene un diccionario
+  ```python
+    diccionario = {'color': 'rosa', 'marca': 'Zara', 'talle': 'U'} 
+     len(diccionario)
+     #Esto retornará 3
+
+  ```
+
+  Bueno,  es el final de python, tipos de datos y como manejarlos

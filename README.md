@@ -22,4 +22,4 @@ Mucho de este contenido lo saqué de mis apuntes tomando cursos en:
 
 
 Contenido
-1. [Datos](datos.md)
+1. [Python: Datos, tipos de datos y como manejarlos :car:](datos.md)
