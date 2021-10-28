@@ -9,13 +9,11 @@ Saludos,mi nombre es **Carlos Lara**. Pero mi nickname en internet es **Hercules
 
 ***Acá les dejo mis redes sociales:***
 
-* [Twitter](https://twitter.com/Blues_Lara)
-* [Github](https://github.com/herculeskan)
-  >La verdad no uso muchas redes sociales
+* [Twitter :bird:](https://twitter.com/Blues_Lara)
+* [Github :octocat:](https://github.com/herculeskan)
+* [Linkedin :snail:](https://www.linkedin.com/in/carlos-lara-gil-947845209/)
 
- 
-*[x] Probando mi primer markdown
-```Python
-for i  in range(4,10,2):
-    print(i)
-```
+  >La verdad no uso muchas redes sociales
+---
+Contenido
+1. [Datos](datos.md)
