@@ -297,5 +297,25 @@ for clave in valor.value():
    #Esto retornará 3
  
  ```
-![ending](img/ending.jpg) 
- Bueno,  es el final de python, tipos de datos y cómo manejarlos
+---
+#### sets()
+un conjunto no ordenado de elementos, se declara con {}, a diferencia del directorio no tiene relaciones clave-valor
+```python
+    cubiertos = {"tenedor", "cuchillo", "cuchara"}
+    vajilla =set("tasa","plato", "olla")
+
+print(cubiertos)
+print(vajillas)
+# (["tenedor", "cuchillo", "cuchara"])
+#(["tasa","plato", "olla"])
+```
+un
+ambos mostrarán sus valores, a diferencia de 
+los directorios, los set son inmutablez
+
+
+![ending](img/bucle.jpg) 
+ *Bueno,  es el final de python, tipos de datos y cómo manejarlos. :car:*
+ >nunca pares de aprender
+ 
+###### El siguiente apunte es a cerca de: [Estructuras de control y bucles](/bucles.md) :smoking: 
