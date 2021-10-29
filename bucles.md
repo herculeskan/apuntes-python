@@ -91,7 +91,7 @@ print("hola mundo")
 SyntaxError: invalid syntax
 ```
 ---
-### elif
+#### elif
 
 Entender elif es más sencillo que lo anterior. Elif es lo que pasa si if tiene más de dos caminos o opciones a escoger, como si el código dijera: *"si la primera opción es verdadera, sino has esto, y si no resulta has aquello"*.
 Le explicaré con una sintaxis:
@@ -122,10 +122,10 @@ output
 
 
 ---
-##### Bucle
+### Bucle
 Un bucle (loop) es un código que se ejecuta multiples veces.
 
-### Bucle while
+#### Bucle while
 En cierto caso, el bucle while te va a permitir hacer bucles con tu código mientras una condicion sea cierta; cuando se vuelve falsa se termina el bucle.
 La sintáxis básica es:
 ```
@@ -160,12 +160,120 @@ Te lo explico para que quede más claro:
 7. cuando vuelve el bucle while ejecuta por primera vez la linea "saludos a paula" se imprime en la consola que saludo es igual a 1
 8. Continúa sumandose de 1 en 1 hasta llegar a 4
 
+
+
 [Articulo de apoyo](https://www.freecodecamp.org/espanol/news/explicacion-del-bucle-while-de-while/)
 
-<!-- ## Ideas principales
-###### estos conceptos se escribirán preonto
+---
 
-- [x] Saltos de condicional if
-* bucle while
+#### Bucle for
+
+A diferencia del bucle *while* que tiene que cumplir una condición, el
+bucle *for* no necesita ningún tipo de condición, se traduciría algo como "*por cada valor que tenga tu objeto hará x cosa".
+acá les dejaré un ejemplo:
+
+```
+for valor in lista_de_valores:
+    usar variable dentro de este bloque de código
+
+```
+* "*for, in*" son palabras reservadas dentro del bucle for
+* se pueden interpretar de la siguiente forma:
+  * "*por cada <valor> en <listas>
+
+por lo general se usa cualquier cosa como valor del iterador, estos serán asignadds al objeto *iterar*. Un ejemplo de esto:
+```python
+lista_tulpas = [(1,2), (3,4)]
+
+for a, b in lista_tulpas:
+    print("a:"a,"b:",b)
+    
+```
+- a,b: son los valores a iterar
+- lista_tulpas: el objeto a iterar
+
+***output***
+```
+a: 1 b:2
+a:3 b:4
+```
+---
+
+#####Diferentes formas de usar bucles for:
+
+###### 1. range()-rango
+´´´python
+for i in range(10)
+print(i)
+´´´
+*output*
+>0 
+>1
+> 2
+ > 3
+  > 4
+   > 5
+    > 6
+     > 7
+      > 8
+       > 9
+
+
+La función range es un tipo de secuencia inmutable. Se mostrarán todos los números del 0 al 9 porque el rango son 10.
+
+Es como un contador. pero se le pueden agregar variaciones:
+
+```python
+for i in range(4,10,2)
+    print(i)
+```
+*output*
+>4
+>6
+>8
+
+el primer parámetro(4) es donde se inicia el rango, el segundo es donde termina(10) y el tercero (2) es como sigue los pasos, en este caso de 2 en 2
+
+###### 2. zip()
+itera sobre doslistas del mismo tamaño en una sola función
+
+```python
+A = ["a", "b", "c"]
+B = ["a", "d", "e"]
+for a,b in zip(A,B):
+    print a,b === b
+```
+*output*
+´´´
+a a True
+d b False
+c e Fals
+´´´
+>nota: parece que también sirve para comparar
+
+###### 3. enumerate()
+Iterar sobre una lista y obtener el índice correspondiente 
+
+```python
+A = ["esto", "es", "algo" "divertido"]
+
+for indice.palabra in enumerate(A):
+    print(indice, palabra)
+```
+*output*
+```
+0 esto
+1 es
+2 algo
+3 divertido
+```
+>_nota_: si necesita acceder al índice de uan iteración. Nunca se utiliza range(len(iterble)). Esto es una mala practica, al contrario se debe usar enumerate():
+
+
+
+<!-- 
+
+ * [x] Saltos de condicional if
+* [x] bucle while
 * bucle for
 * control de excepciones --> 
