@@ -127,6 +127,40 @@ Un bucle (loop) es un código que se ejecuta multiples veces.
 
 ### Bucle while
 En cierto caso, el bucle while te va a permitir hacer bucles con tu código mientras una condicion sea cierta; cuando se vuelve falsa se termina el bucle.
+La sintáxis básica es:
+```
+a = 0
+
+while a < 10
+    ejecuta esto mientras sea 10
+```
+Par entenderlo mejor, aquí va un ejemplo:
+```python
+saludo = 0
+gente = ['paula', 'pepe', 'jose', 'robertina' ]
+while saludo < 4:
+    print("saludos a "+ gente[personas])
+    saludo +=1
+
+```
+>mientras que saludo sea menor a 4 imprimirá  "saludos gente[persona dentro del arrelgo]" 
+
+*El output sería*
+>saludos a  paula
+>saludos a pepe
+>saludos a jode
+>saludos a robertina 
+Te lo explico para que quede más claro:
+1. La variable "saludo" tiene el valor de 0
+2. la variable gente es asignada en una lista con 4 perdonas
+3. el bucle while comienza
+4. el bloque de código se ejecutará hasta que la condición deje de cumplirse
+5. la condición es 'saludo < 4' lo que significa que el  bucle se cumplirá mientras saludo sea menor a 4
+6. la variable saludo se actualiza en cada iteración
+7. cuando vuelve el bucle while ejecuta por primera vez la linea "saludos a paula" se imprime en la consola que saludo es igual a 1
+8. Continúa sumandose de 1 en 1 hasta llegar a 4
+
+[Articulo de apoyo](https://www.freecodecamp.org/espanol/news/explicacion-del-bucle-while-de-while/)
 
 <!-- ## Ideas principales
 ###### estos conceptos se escribirán preonto
