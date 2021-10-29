@@ -11,7 +11,7 @@ print('hola') ; print('hola') ; print('hola')
 ```
 también y super importante tener en claro el concepto de ***INDENTACIÓN***.
 
-A diferencia de otros lenguajes que *anidan* el contenido de sus datos, funciones o algoritmos en bloques de código con corchetes. Python lo hace solamente usando espacios, haciendo que su sintáxis sea mucho más fácil de leer. Una vez que te acostumbras. En otros lenguajes de programación que aprendas, notarás que tu código se ve más limpio.
+A diferencia de otros lenguajes que *anidan* el contenido de sus datos, funciones o algoritmos en bloques de código encerrados en corchetes. Python lo hace solamente usando espacios, haciendo que su sintáxis sea mucho más fácil de leer. Una vez que te acostumbras. En los siguientes lenguajes de programación que prendas, notarás que escribes de forma más limpia.
 
 acá dejo un ejemplo de indentación:
 ```python
@@ -20,10 +20,11 @@ instruccion_principal:
     otra instruccion_anidada
 instruccion_independiente
 ```
-En el anterior bloque de código está claro que la instrucción principal tiene dos instrucciones dentro. La instrucción independiente esta fuera del bloque de código lo que significa que pase lo que pase dentro de instrucción principal, la instrucción independiente se cumplirá su función igual.
+>En el bloque anterior podemos apreciar que la instrucción principal anida dentro dos instrucciones. Podemos intuir que la instruicción independiente que está  al nivel de la instrucción principal es otro bloque de código y funciona fuera de la instrucción principal. Lo que significa que sin importar que pase dentro de la función principal; la independiente seguirá su camino
+
 
 ----
-### Bucles :smoking:
+#### Indentación :smoking:
 
 Para sacarle provecho a lo anterior aprendido sobre la indentación. Trataré de explicar los bucles.
 Estas son una especie de factores o requisitos para que se pueda ejecutar. Lo que nos permite manipular mejor la lógica del código
@@ -50,9 +51,82 @@ if a < b:
 En el ejemplo anterior tenemos dos variables, if verificó si la condición que teníamos era correcta y al ser esta cierta, imprimió "*a es más pequeño que b*"
 
 
-##### Else... if
-Si queremos agregar una condición si nuestro if no se cumple, le agregamos el else. esto significaría algo como: "*si esta condición no se cumple, haz lo otro*"
+#### Else... if
+Si queremos agregar una condición si nuestro if no se cumple, le agregamos el else. esto significaría algo como: "*si esta condición no se cumple, haz lo otro*".
+La sintaxis sería algo asi:
+```
+if condición:
+    ejecuta esto si la condición es True
+else:
+    ejecuta esto si la condición es false
+```
+Como hablamos anteriormente de la indentación. El else tiene que estar al nivel del if para que funcione. porque  si esta al nivel de la condición podría crear un problema.
 
+otro ejemplo para que te des una idea de como funciona el else if
+```python
+a=1 
+b=2
+if a > b:
+    print('a es mayor que b')
+else:
+    print('a no es mayor que b')
+```
+*el output sería:*
+```
+a no es mayor que b
+```
+para agregar, se sabe que no se puede meter un bloque de código entre el else y el if porque esto causaría error
+```python
+if 1 > 2:
+   print("1 es mayor que 2")
+print("hola mundo")
+else:
+   print("1 es menor que 2")
+```
+*output*
+```
+File "<stdin>", line 3
+print("hola mundo")
+^
+SyntaxError: invalid syntax
+```
+---
+### elif
+
+Entender elif es más sencillo que lo anterior. Elif es lo que pasa si if tiene más de dos caminos o opciones a escoger, como si el código dijera: *"si la primera opción es verdadera, sino has esto, y si no resulta has aquello"*.
+Le explicaré con una sintaxis:
+```
+if primera condición:
+    ejecutar sentencia
+elif segunda condición:
+    ejecutrar otra sentencia
+else: ejecutar esta sentencia 
+si las anteriores no sirven
+```
+podemos usar los elif que queramos:
+
+```python
+x = 1
+if x > 10
+    print(" x es mayor que 10)
+elif x < 10:
+    print("x es menor que 10)
+elif x < 20:
+    print("x es menor que 20")
+
+else:
+    print(" es igual a 10")
+```
+output
+>x es menor que 10!
+
+
+---
+##### Bucle
+Un bucle (loop) es un código que se ejecuta multiples veces.
+
+### Bucle while
+En cierto caso, el bucle while te va a permitir hacer bucles con tu código mientras una condicion sea cierta; cuando se vuelve falsa se termina el bucle.
 
 <!-- ## Ideas principales
 ###### estos conceptos se escribirán preonto
