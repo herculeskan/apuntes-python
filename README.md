@@ -23,4 +23,4 @@ Mucho de este contenido lo saqué de mis apuntes tomando cursos en:
 
 Contenido
 1. [Python: Datos, tipos de datos y como manejarlos :car:](datos.md)
-2. [Estructuras de control y bucles](bucles.md)
+2. [Estructuras de control y bucles :smoking:](bucles.md)
