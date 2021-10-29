@@ -4,7 +4,7 @@
 Saludos,mi nombre es **Carlos Lara**. Pero mi nickname en internet es **Hercules** Kan. Soy un programador autodidacta y me gusta escribir todo lo que pasa en mi día a día. En base a esta necesidad, me ha urgido escribir unos apuntes en  markdown para practicar y repasar
 
 
-![serials experiments lain](img/profile.jpg)
+![perro con gafas](img/profile.jpg)
 
 
 ***Acá les dejo mis redes sociales:***
