@@ -1,6 +1,11 @@
 # Estructuras de control y bucles :smoking:
 ![cangrejo](img/bucle.jpg)
 
+###### Temas que se tocan:
+ * [x] Saltos de condicional if
+* [x] bucle while
+* [x] bucle for
+* [x] control de excepciones 
 
 
 ### Conceptos a tener en cuenta:
@@ -20,7 +25,10 @@ instruccion_principal:
     otra instruccion_anidada
 instruccion_independiente
 ```
->En el bloque anterior podemos apreciar que la instrucción principal anida dentro dos instrucciones. Podemos intuir que la instruicción independiente que está  al nivel de la instrucción principal es otro bloque de código y funciona fuera de la instrucción principal. Lo que significa que sin importar que pase dentro de la función principal; la independiente seguirá su camino
+* En el bloque anterior podemos apreciar que la instrucción prinipal anida dentro dos instrucciones.
+   * Podemos intuir que la instruicción independiente que está  al nivel de la instrucción principal
+ >  es otro bloque de código y funciona fuera de la instrucción principal.
+* Lo que significa que sin importar que pase dentro de la función principal; la independiente seguirá su camino
 
 
 ----
@@ -166,7 +174,10 @@ Te lo explico para que quede más claro:
 
 ---
 
-#### Bucle for
+### Bucle for
+
+>A mi parecer, de los bucles más extensos que he visto hastas ahora en la programación
+
 
 A diferencia del bucle *while* que tiene que cumplir una condición, el
 bucle *for* no necesita ningún tipo de condición, se traduciría algo como "*por cada valor que tenga tu objeto hará x cosa".
@@ -179,9 +190,9 @@ for valor in lista_de_valores:
 ```
 * "*for, in*" son palabras reservadas dentro del bucle for
 * se pueden interpretar de la siguiente forma:
-  * "*por cada <valor> en <listas>
+  * "*por cada < valor > en < listas >
 
-por lo general se usa cualquier cosa como valor del iterador, estos serán asignadds al objeto *iterar*. Un ejemplo de esto:
+por lo general se usa cualquier cosa como valor del iterador, estos serán asignados al objeto *iterar*. Un ejemplo de esto:
 ```python
 lista_tulpas = [(1,2), (3,4)]
 
@@ -202,10 +213,12 @@ a:3 b:4
 #####Diferentes formas de usar bucles for:
 
 ###### 1. range()-rango
-´´´python
+
+```python
 for i in range(10)
 print(i)
-´´´
+```
+
 *output*
 >0 
 >1
@@ -232,7 +245,10 @@ for i in range(4,10,2)
 >6
 >8
 
-el primer parámetro(4) es donde se inicia el rango, el segundo es donde termina(10) y el tercero (2) es como sigue los pasos, en este caso de 2 en 2
+
+1. el primer parámetro(4) es donde se inicia el rango.
+2.  el segundo es donde termina(10) 
+3.   el tercero (2) es como sigue los pasos, en este caso de 2 en 2
 
 ###### 2. zip()
 itera sobre doslistas del mismo tamaño en una sola función
@@ -244,12 +260,12 @@ for a,b in zip(A,B):
     print a,b === b
 ```
 *output*
-´´´
+```
 a a True
 d b False
 c e Fals
-´´´
->nota: parece que también sirve para comparar
+```
+>nota: parece que también sirve para comparar y es en booleano
 
 ###### 3. enumerate()
 Iterar sobre una lista y obtener el índice correspondiente 
@@ -269,11 +285,43 @@ for indice.palabra in enumerate(A):
 ```
 >_nota_: si necesita acceder al índice de uan iteración. Nunca se utiliza range(len(iterble)). Esto es una mala practica, al contrario se debe usar enumerate():
 
+##### Bucle for/else
+
+Por suerte Python te permite usar el bucle else por si la condición no se cumple, podemos. También tenemos que tener en cuenta la secuencia ***break*** y ***continue***
+* ***break*** romperá el código y ***continue*** se lo saltará y continurá con el siguiente bloque de código
+
+```python
+semana = ["lunes", "martes","miercoles", "jueves", "viernes"]
+
+for dia in semana:
+    if dia in semana:
+        print('Hoy es un día de semana')
+        break
+    else:
+        print('hoy no es fin de semana')
+
+```
+
+#### Control de excepciones en python
+
+si una parte de tu código es erronea, python no lo leerá completo, Si no estás seguro de que tu código funcione puedes usar el try y el except
+
+la sintaxis sería así:
+```python
+try:
+    #bloque de código que puede causar error 
+except <error type>:
+    #esto crea una excepción;
+    #se ejecuta si esto da error
+else:
+    #hace esto si el código no arrojó esto
+
+finally:
+    #este bloque siempre estará ejecutado
+```
+
+Ok. Ya vimos:
 
 
-<!-- 
-
- * [x] Saltos de condicional if
-* [x] bucle while
-* bucle for
-* control de excepciones --> 
+![Funciones](/img/funciones.gif)
+Llegó el momento de las [funciones :gun:](/funciones.md)
