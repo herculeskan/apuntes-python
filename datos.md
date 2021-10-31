@@ -150,28 +150,7 @@ más(+) concatenar...... (*) multiplicar
 más(+) concatenar...... (*) multiplicar
  
 ---
-###Operadores lógicos
-* and (&)
-* or (|)
-* not (!=)
-*nota:* a diferencia de otros lenguajes python puede presentar los operadores lógicos con palabras textuales
- 
-***Tabla de operador and***
-| primer operando | segundo operando | resultado |
-| --------------- |------------------| --------- |
-| true           | true        | true |
-|true        | false    | false |
-|false | true | false
-|false | false | false
------
-***Tabla de operador not***
- 
-| Operador | resultado |
-| --------------- |------------------ |
-|true | false |
-|false | true |
- 
- 
+
 #### Estructura de datos :books:
  
 Al igual que muchos lenguajes de programación, python también suple la necesidad de meter varios objetos en una variable o constante, a esto se le llama *array* o *arreglo*
