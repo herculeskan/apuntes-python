@@ -324,4 +324,4 @@ Ok. Ya vimos:
 
 
 ![Funciones](/img/funciones.gif)
-Llegó el momento de las [funciones :gun:](/funciones.md)
+Llegó el momento de las [funciones :gun:](funciones.md)
